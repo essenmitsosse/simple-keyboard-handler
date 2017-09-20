@@ -1,16 +1,16 @@
 {
-	"name": "***MODULENAME***",
+	"name": "simple-keyboard-handler",
 	"version": "0.0.0",
-	"description": "***DESCRIPTION***",
-	"main": "***MODULENAME***.js",
+	"description": "A module to catch keyboard events and then fire callbacks",
+	"main": "simple-keyboard-handler.js",
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/essenmitsosse/***MODULENAME***"
+		"url": "git+https://github.com/essenmitsosse/simple-keyboard-handler"
 	},
 	"bugs": {
-		"url": "https://github.com/essenmitsosse/***MODULENAME***/issues"
+		"url": "https://github.com/essenmitsosse/simple-keyboard-handler/issues"
 	},
-	"homepage": "https://github.com/essenmitsosse/***MODULENAME***#readme",
+	"homepage": "https://github.com/essenmitsosse/simple-keyboard-handler#readme",
 	"scripts": {
 		"test": "mocha -R spec tests/*",
 		"test:watch": "mocha -R min tests/* -watch",
@@ -20,7 +20,9 @@
 		"javascript",
 		"js",
 		"helper",
-		"vanilla"
+		"vanilla",
+		"keyboard",
+		"keystroke"
 	],
 	"author": "Marcus Blättermann <kontakt@essenmitsosse.de> (http://essenmitsosse.de)",
 	"license": "MIT",
