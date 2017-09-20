@@ -15,7 +15,7 @@ var addKeyboardShortcut = require( "simple-keyboard-handler" );
 addKeyboardShortcut( {
     key: 75 // keycode for 'k'
     ctrl: false // defaults to false
-    alt: true // defaults to false
+    shift: true // defaults to false
 }, function () {
     console.log( "This is my callback." );
 } );
