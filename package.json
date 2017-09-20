@@ -36,6 +36,8 @@
 		"istanbul": "^0.4.5",
 		"jsdom": "^11.2.0",
 		"jsdom-global": "^3.0.2",
-		"mocha": "^3.5.3"
+		"mocha": "^3.5.3",
+		"sinon": "^3.3.0",
+		"sinon-chai": "^2.13.0"
 	}
 }
