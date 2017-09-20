@@ -3,6 +3,10 @@
 	"version": "0.0.0",
 	"description": "A singleton module to catch keyboard events and then fire callbacks",
 	"main": "simple-keyboard-handler.js",
+	"files": [
+		"simple-keyboard-handler.js",
+		"/lib"
+	],
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/essenmitsosse/simple-keyboard-handler"
