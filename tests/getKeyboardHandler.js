@@ -11,42 +11,42 @@ var chai = require( "chai" ),
 chai.should();
 chai.use( sinonChai );
 
-beforeEach( function () {
-	global.cleanup = jsdom();
-
-	this.keyboardHandler = getKeyboardHandler();
-
-	this.callbackWithKey = sinon.spy();
-	this.callbackWithKeyAndShift = sinon.spy();
-	this.callbackWithKeyAndCtrl = sinon.spy();
-	this.callbackWithKeyAndShiftAndCtrl = sinon.spy();
-
-	this.keyboardHandler( {
-		keyCode: 37
-	}, this.callbackWithKey );
-
-	this.keyboardHandler( {
-		keyCode: 37,
-		shift: true
-	}, this.callbackWithKeyAndShift );
-
-	this.keyboardHandler( {
-		keyCode: 37,
-		ctrl: true
-	}, this.callbackWithKeyAndCtrl );
-
-	this.keyboardHandler( {
-		keyCode: 37,
-		shift: true,
-		ctrl: true
-	}, this.callbackWithKeyAndShiftAndCtrl );
-} );
-
-afterEach( function () {
-	global.cleanup();
-} );
-
 describe( "Check if the passed functions get called when the key is pressed", function () {
+	beforeEach( function () {
+		global.cleanup = jsdom();
+
+		this.keyboardHandler = getKeyboardHandler();
+
+		this.callbackWithKey = sinon.spy();
+		this.callbackWithKeyAndShift = sinon.spy();
+		this.callbackWithKeyAndCtrl = sinon.spy();
+		this.callbackWithKeyAndShiftAndCtrl = sinon.spy();
+
+		this.keyboardHandler( {
+			keyCode: 37
+		}, this.callbackWithKey );
+
+		this.keyboardHandler( {
+			keyCode: 37,
+			shift: true
+		}, this.callbackWithKeyAndShift );
+
+		this.keyboardHandler( {
+			keyCode: 37,
+			ctrl: true
+		}, this.callbackWithKeyAndCtrl );
+
+		this.keyboardHandler( {
+			keyCode: 37,
+			shift: true,
+			ctrl: true
+		}, this.callbackWithKeyAndShiftAndCtrl );
+	} );
+
+	afterEach( function () {
+		global.cleanup();
+	} );
+
 	it( "Only key", function () {
 		keyPress( {
 			keyCode: 37,
