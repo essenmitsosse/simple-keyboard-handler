@@ -22,21 +22,21 @@ beforeEach( function () {
 	this.callbackWithKeyAndShiftAndCtrl = sinon.spy();
 
 	this.keyboardHandler( {
-		key: 37
+		keyCode: 37
 	}, this.callbackWithKey );
 
 	this.keyboardHandler( {
-		key: 37,
+		keyCode: 37,
 		shift: true
 	}, this.callbackWithKeyAndShift );
 
 	this.keyboardHandler( {
-		key: 37,
+		keyCode: 37,
 		ctrl: true
 	}, this.callbackWithKeyAndCtrl );
 
 	this.keyboardHandler( {
-		key: 37,
+		keyCode: 37,
 		shift: true,
 		ctrl: true
 	}, this.callbackWithKeyAndShiftAndCtrl );
@@ -49,7 +49,7 @@ afterEach( function () {
 describe( "Check if the passed functions get called when the key is pressed", function () {
 	it( "Only key", function () {
 		keyPress( {
-			key: 37,
+			keyCode: 37,
 			ctrl: false,
 			shift: false
 		} );
@@ -69,7 +69,7 @@ describe( "Check if the passed functions get called when the key is pressed", fu
 
 	it( "Only key with shift", function () {
 		keyPress( {
-			key: 37,
+			keyCode: 37,
 			ctrl: false,
 			shift: true
 		} );
@@ -89,7 +89,7 @@ describe( "Check if the passed functions get called when the key is pressed", fu
 
 	it( "Only key with ctrl", function () {
 		keyPress( {
-			key: 37,
+			keyCode: 37,
 			ctrl: true,
 			shift: false
 		} );
@@ -109,7 +109,7 @@ describe( "Check if the passed functions get called when the key is pressed", fu
 
 	it( "Only key with shift and ctrl", function () {
 		keyPress( {
-			key: 37,
+			keyCode: 37,
 			ctrl: true,
 			shift: true
 		} );

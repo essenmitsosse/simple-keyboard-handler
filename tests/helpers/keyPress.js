@@ -2,7 +2,7 @@
 
 module.exports = function ( args ) {
 	var event = document.createEvent( "Event" );
-	event.keyCode = args.key;
+	event.keyCode = args.keyCode;
 	if ( args.ctrl === true ) {
 		event.ctrlKey = true;
 	}
