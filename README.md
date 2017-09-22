@@ -11,7 +11,7 @@ If you require this in your project it will automatically be initalized and add 
 ```javascript
 var addKeyboardShortcut = require( "simple-keyboard-handler" );
 
-// Maps ALT+k to the passed function
+// Maps SHIFT+K to the passed function
 addKeyboardShortcut( {
     key: 75 // keycode for 'k'
     ctrl: false // defaults to false
