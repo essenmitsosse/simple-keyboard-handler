@@ -9,10 +9,10 @@ If you require this in your project it will automatically be initalized and add 
 # Usage
 
 ```javascript
-var addKeyboardShortcut = require( "simple-keyboard-handler" );
+var keyBoardHandler = require( "simple-keyboard-handler" );
 
 // Maps SHIFT+K to the passed function
-addKeyboardShortcut( {
+keyBoardHandler.addShortcut( {
     key: 75 // keycode for 'k'
     ctrl: false // defaults to false
     shift: true // defaults to false
