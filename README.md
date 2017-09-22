@@ -13,9 +13,10 @@ var keyBoardHandler = require( "simple-keyboard-handler" );
 
 // Maps SHIFT+K to the passed function
 keyBoardHandler.addShortcut( {
-    key: 75 // keycode for 'k'
+    keyCode: 75 // keycode for 'k'
     ctrl: false // defaults to false
     shift: true // defaults to false
+    alt: false // defaults to false
 }, function () {
     console.log( "This is my callback." );
 } );
