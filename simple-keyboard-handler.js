@@ -1,5 +1,7 @@
 "use strict";
 
 module.exports = ( function () {
-	return require( "./lib/getKeyboardHandler" );
+	return {
+		addShortcut: require( "./lib/getKeyboardHandler" )()
+	};
 } )();
