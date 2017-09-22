@@ -1,6 +1,6 @@
 {
 	"name": "simple-keyboard-handler",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"description": "A singleton module to catch keyboard events and then fire callbacks",
 	"main": "simple-keyboard-handler.js",
 	"files": [
