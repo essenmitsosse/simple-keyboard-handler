@@ -9,6 +9,6 @@ module.exports = function ( args ) {
 	if ( args.shift === true ) {
 		event.shiftKey = true;
 	}
-	event.initEvent( "keypress" );
+	event.initEvent( "keyup" );
 	document.dispatchEvent( event );
 };
